@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
-    let mut result:Vec<i32> = Vec::new();
+    let mut result: Vec<i32> = Vec::new();
     let mut checked_map: HashMap<i32, i32> = HashMap::new();
     checked_map.insert(nums[0], 0);
     for i in 1..nums.len() {
@@ -30,7 +30,7 @@ mod tests {
 
     #[test]
     fn test_two_sum_1() {
-        let nums = vec![2,7,11,15];
+        let nums = vec![2, 7, 11, 15];
         let target = 9;
         let mut result = two_sum(nums, target);
         result.sort();
